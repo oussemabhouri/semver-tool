@@ -286,7 +286,7 @@ function command_bump {
 
   case $# in
     2) case $1 in
-        major|minor|patch|prerel|release) command=$1; sub_version="+."; version=$2;;
+        chart_version|major|minor|patch|prerel|release) command=$1; sub_version="+."; version=$2;;
         *) usage_help;;
        esac ;;
     3) case $1 in
