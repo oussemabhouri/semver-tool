@@ -315,7 +315,7 @@ function command_bump {
           else
             new="$((major + 1)).0.0"
         fi
-    fi
+    fi;;
     major) new="$((major + 1)).0.0";;
     minor) new="${major}.$((minor + 1)).0";;
     patch) new="${major}.${minor}.$((patch + 1))";;
