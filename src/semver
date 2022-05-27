@@ -308,12 +308,12 @@ function command_bump {
     chart_version)
     re='^[9]+$'
     if ! [[ $patch =~ $re ]] ; then
-      new="${major}.${minor}.$((patch + 1))";
+      new="${major}.${minor}.$((patch + 1))"
       else
         if ! [[ $minor =~ $re ]] ; then
-          new="${major}.$((minor + 1)).0";
+          new="${major}.$((minor + 1)).0"
           else
-            new="$((major + 1)).0.0";
+            new="$((major + 1)).0.0"
         fi
     fi
     major) new="$((major + 1)).0.0";;
